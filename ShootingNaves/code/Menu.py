@@ -21,7 +21,7 @@ class Menu:
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(50, "Shooting", (155, 128, 0), ((WIN_WIDTH / 2), 100))
-            self.menu_text(50, "Naves", (155, 128, 0), ((WIN_WIDTH / 2), 50))
+            self.menu_text(50, "Naves", (155, 128, 0), ((WIN_WIDTH / 2), 50)) #
             pygame.display.flip()
 
             # Fecha o jogo
