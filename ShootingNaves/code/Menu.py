@@ -16,10 +16,12 @@ class Menu:
     def run(self):
         pygame.mixer_music.load('./asset/Menu.flac')
         pygame.mixer_music.play(-1)
+        pygame.mixer.music.set_volume(0.1)
 
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(50, "Shooting", (155, 128, 0), ((WIN_WIDTH / 2), 100))
+            self.menu_text(50, "Naves", (155, 128, 0), ((WIN_WIDTH / 2), 50))
             pygame.display.flip()
 
             # Fecha o jogo
